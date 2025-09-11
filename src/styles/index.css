@@ -1,0 +1,49 @@
+html,
+body {
+  	height: 100vh;
+	background-color: #1f1f1f;
+	background-color: var(--ant-color-bg-base);
+	background-image: url("../assets/images/DesignClo-BG.png");
+	background-size: cover;
+	overflow: hidden;
+}
+
+#root {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+
+	background: radial-gradient(circle at center, #1f1f1f00, #000000);
+}
+
+.page-container {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+
+	padding:
+		env(safe-area-inset-top, 32px)
+		env(safe-area-inset-right, 32px)
+    	env(safe-area-inset-bottom, 32px)
+    	env(safe-area-inset-left, 32px);
+}
+.scrollable-container {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.scrollable-container.y {
+	overflow-y: hidden;
+	overflow-x: auto;
+}
+
+.ant-popover-title {
+	margin-bottom: 0 !important;
+}
+
+* {
+	outline: none !important;
+}
